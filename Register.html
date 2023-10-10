@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta UTF-8>
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Regitration Form</h1>
+    <p id="description">Thank you for choosing us</p>
+    
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" >Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+       
+        <label id="email-label" for="email">Email
+          <input type="email" id="email" placeholder="Enter your email" minlength="8" required />
+          </label>
+          
+          <label id="number-label" for="number">Age (optional)
+          <input type="number" id="number"placeholder="Enter your age" min="18" max="99" />
+          </label>
+
+</fieldset><fieldset>
+        <label  for="dropdown">Which option best describes your current role?
+          <select id="dropdown">
+            <option disabled>Select current role</option>
+            <option>student</option>
+            <option>full time job</option>
+            <option>per time job</option>
+            <option>prefer not to say</option>
+            <option>Other</option>
+            </select>
+            </label></fieldset><fieldset>
+
+            <label>Would you recommend us to a friend?
+              
+              <label for="definitely">
+              <input type="radio" name="DMN" id="definitely" value="definitely" class="inline" /> Definitely
+              </label> 
+               
+                <label for="maybe">
+              <input type="radio" id="maybe" name="DMN" value="maybe" class="inline" /> Maybe
+              </label>
+                
+                <label for="not-sure">
+              <input type="radio" id="not-sure" name="DMN" value="not-sure" class="inline" /> Not sure
+              </label>
+           
+            </label></fieldset><fieldset>
+
+<label>What would you like to see improved? (Check all that apply)
+   
+        
+         <label for="front" name="front">
+          <input id="front" type="checkbox" required name="end" value="front" class="inline" />Front-end Projects
+        </label>
+
+         <label for="back" name="end">
+          <input id="back" type="checkbox" required name="back" value="back" class="inline" />Back-end Projects
+        </label>
+
+         <label for="Data" name="end">
+          <input id="Data" type="checkbox" required name="Data" value="data" class="inline" />Data Visualization
+        </label></fieldset><fieldset>
+
+         <label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+        </label>
+
+        <input id="submit" type="submit" value="Submit" />
+     
+      </fieldset>
+      
+    </form></body><html>
